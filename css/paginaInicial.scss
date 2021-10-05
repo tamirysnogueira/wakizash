@@ -1,0 +1,198 @@
+@import './colors/colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: $gray-medium;
+    font-family: 'Saira', sans-serif;
+    
+}
+
+main {
+    width: 1224px;
+    margin: auto;
+
+    margin-top: 29px;
+}
+
+#blurTop {
+    position: absolute;
+    width: 100vw;
+    z-index: -1000;
+    top: 0;
+}
+
+
+#blurAndImage {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    top: 450px;
+}
+
+#containerPresentation {
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        nav {
+            width: 521px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                color: $black-dark;
+                font-size: 24px;
+                font-weight: 300;
+            }
+
+            a:first-child {
+                display: flex;
+                align-items: center;
+
+                span {
+                    margin-left: 13px;
+                }
+            }
+        }
+    }
+
+    #containerAbout {
+        height: 398px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 223px;
+        margin-bottom: 118px;
+
+        div {
+            width: 496px;
+
+            p {
+                strong {
+                    font-weight: 600;
+                    color: $red-medium;
+                }
+            }
+
+            p:first-child {
+                width: 450px;
+                margin-bottom: 96px;
+                font-size: 32px;
+                font-weight: 400;
+            }
+
+            p:nth-child(2){
+                font-size: 24px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.detail {
+    text-align: center;
+    p {
+        font-size: 36px;
+        color: $red-dark;
+    }
+
+    .border {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        border-bottom: 5px solid $red-medium;
+    
+    }
+}
+
+#background {
+    position: absolute;
+
+    margin-top: 5px;
+    left: 0;
+
+    width: 100vw;
+    height: 2739px;
+
+    background-color: $black-light;
+
+    z-index: -1000;
+}
+
+#chooseUs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 194px;
+
+    #description {
+        width: 618px;
+
+        h2 {
+            font-size: 56px;
+            color: white;
+
+            margin-bottom: 211px;
+        }
+
+        p {
+            font-size: 22px;
+            color: $gray-dark;
+        }
+    }
+
+    #Ingredients {
+        width: 412px;
+        height: 481px;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='4' ry='4' stroke='%23B21921FF' stroke-width='4' stroke-dasharray='20' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+        border-radius: 4px; 
+
+        padding: 61px 0 0 61px;
+
+        h3 {
+            font-size: 30px;
+            font-weight: 500;
+            color: white;
+        }
+
+        ul {
+            margin-top: 32px;
+            li {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                font-size: 22px;
+                font-weight: 500;
+                margin-bottom: 26px;
+
+                span {
+                    margin-left: 14px;
+                    color: $gray-dark;
+                }
+            }
+
+            li:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+#menu {
+    margin-top: 194px;
+}
+
+
+
+

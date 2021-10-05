@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #D8D9D2;
+  font-family: 'Saira', sans-serif;
+}
+
+main {
+  width: 1224px;
+  margin: auto;
+  margin-top: 29px;
+}
+
+#blurTop {
+  position: absolute;
+  width: 100vw;
+  z-index: -1000;
+  top: 0;
+}
+
+#blurAndImage {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  top: 450px;
+}
+
+#containerPresentation header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#containerPresentation header nav {
+  width: 521px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#containerPresentation header nav a {
+  text-decoration: none;
+  color: #050607;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+#containerPresentation header nav a:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#containerPresentation header nav a:first-child span {
+  margin-left: 13px;
+}
+
+#containerPresentation #containerAbout {
+  height: 398px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 223px;
+  margin-bottom: 118px;
+}
+
+#containerPresentation #containerAbout div {
+  width: 496px;
+}
+
+#containerPresentation #containerAbout div p strong {
+  font-weight: 600;
+  color: #D2242D;
+}
+
+#containerPresentation #containerAbout div p:first-child {
+  width: 450px;
+  margin-bottom: 96px;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+#containerPresentation #containerAbout div p:nth-child(2) {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.detail {
+  text-align: center;
+}
+
+.detail p {
+  font-size: 36px;
+  color: #B21921;
+}
+
+.detail .border {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  border-bottom: 5px solid #D2242D;
+}
+
+#background {
+  position: absolute;
+  margin-top: 5px;
+  left: 0;
+  width: 100vw;
+  height: 2739px;
+  background-color: #242526;
+  z-index: -1000;
+}
+
+#chooseUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 194px;
+}
+
+#chooseUs #description {
+  width: 618px;
+}
+
+#chooseUs #description h2 {
+  font-size: 56px;
+  color: white;
+  margin-bottom: 211px;
+}
+
+#chooseUs #description p {
+  font-size: 22px;
+  color: #C5C6C0;
+}
+
+#chooseUs #Ingredients {
+  width: 412px;
+  height: 481px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='4' ry='4' stroke='%23B21921FF' stroke-width='4' stroke-dasharray='20' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 4px;
+  padding: 61px 0 0 61px;
+}
+
+#chooseUs #Ingredients h3 {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+}
+
+#chooseUs #Ingredients ul {
+  margin-top: 32px;
+}
+
+#chooseUs #Ingredients ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 26px;
+}
+
+#chooseUs #Ingredients ul li span {
+  margin-left: 14px;
+  color: #C5C6C0;
+}
+
+#chooseUs #Ingredients ul li:last-child {
+  margin-bottom: 0px;
+}
+
+#menu {
+  margin-top: 194px;
+}
+/*# sourceMappingURL=paginaInicial.css.map */
