@@ -10,26 +10,35 @@ body {
   overflow-x: hidden;
   background-color: #D8D9D2;
   font-family: 'Saira', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main {
   width: 1224px;
-  margin: auto;
   margin-top: 29px;
 }
 
 #blurTop {
   position: absolute;
-  width: 100vw;
-  z-index: -1000;
+  width: 100%;
+  z-index: -1;
   top: 0;
 }
 
 #blurAndImage {
   position: absolute;
   z-index: -1;
-  width: 100vw;
-  top: 450px;
+  top: 50%;
+  width: 100%;
 }
 
 #containerPresentation header {
@@ -60,6 +69,34 @@ main {
   color: #050607;
   font-size: 24px;
   font-weight: 300;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#containerPresentation header nav a:hover {
+  color: #D2242D;
+}
+
+#containerPresentation header nav a::before {
+  content: '';
+  position: absolute;
+  background-color: #D2242D;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#containerPresentation header nav a:hover:before {
+  width: 100%;
 }
 
 #containerPresentation header nav a:first-child {
@@ -205,7 +242,79 @@ main {
   margin-bottom: 0px;
 }
 
-#menu {
+#containerMenu {
   margin-top: 194px;
+}
+
+#containerMenu #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#containerMenu #menu h2 {
+  font-size: 52px;
+  font-weight: 500;
+  color: #D2242D;
+}
+
+#containerMenu #menu #bar {
+  width: 739px;
+  height: 3px;
+  background-color: #D2242D;
+  margin-top: 40px;
+  margin-bottom: 58px;
+}
+
+#containerMenu #menu ul {
+  width: 932px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 141px;
+}
+
+#containerMenu #menu ul li {
+  font-size: 24px;
+  list-style: none;
+  margin-right: 38px;
+}
+
+#containerMenu #menu ul li a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+#containerMenu #menu ul li a:hover {
+  color: #D2242D;
+}
+
+#containerMenu #menu ul li:last-child {
+  margin-right: 0;
+}
+
+#containerMenu #menu ul li:nth-child(7) {
+  margin-right: 0;
+}
+
+#containerMenu #menu ul li:nth-child(8), #containerMenu #menu ul li:nth-child(9), #containerMenu #menu ul li:nth-child(10), #containerMenu #menu ul li:nth-child(11), #containerMenu #menu ul li:nth-child(12) {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=paginaInicial.css.map */
