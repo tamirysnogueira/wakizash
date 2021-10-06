@@ -11,20 +11,23 @@ body {
     overflow-x: hidden;
     background-color: $gray-medium;
     font-family: 'Saira', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
 main {
     width: 1224px;
-    margin: auto;
 
     margin-top: 29px;
 }
 
 #blurTop {
     position: absolute;
-    width: 100vw;
-    z-index: -1000;
+    width: 100%;
+    z-index: -1;
     top: 0;
 }
 
@@ -32,8 +35,8 @@ main {
 #blurAndImage {
     position: absolute;
     z-index: -1;
-    width: 100vw;
-    top: 450px;
+    top: 50%;
+    width: 100%;
 }
 
 #containerPresentation {
@@ -53,6 +56,30 @@ main {
                 color: $black-dark;
                 font-size: 24px;
                 font-weight: 300;
+                position: relative;
+                display: flex;
+                justify-content: center;
+
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    color: $red-medium;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-color: $red-medium;
+                    width: 0;
+                    height: 2px;
+                    bottom: -5px;
+
+                    transition: 0.3s ease-in-out;
+                }
+
+                &:hover:before {
+                    width: 100%;
+                }
             }
 
             a:first-child {
@@ -189,8 +216,69 @@ main {
     }
 }
 
-#menu {
+#containerMenu {
     margin-top: 194px;
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 52px;
+            font-weight: 500;
+            color: $red-medium;
+        }
+
+        #bar {
+            width: 739px;
+            height: 3px;
+            background-color: $red-medium;
+            margin-top: 40px;
+            margin-bottom: 58px;
+        }
+
+        ul {
+            width: 932px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            margin-bottom: 141px;
+
+            li {
+                font-size: 24px;
+                list-style: none;
+
+                margin-right: 38px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+
+                    transition: 0.2s ease-in-out;
+
+                    &:hover {
+                        color: $red-medium;
+                    }
+                }
+            }
+
+            li:last-child {
+                margin-right: 0;
+            }
+
+            li:nth-child(7) {
+                margin-right: 0;
+            }
+
+            li:nth-child(8), li:nth-child(9), li:nth-child(10), li:nth-child(11), li:nth-child(12){
+                margin-top: 20px;
+            }
+
+        }
+    }
 }
 
 
