@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="img/img-componentes/logo-topo.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/paginaInicial.css">
     <script src="svg-inject.min.js"></script>
+    
     <title>Wakizash</title>
 </head>
 <body>
@@ -19,20 +20,23 @@
     </div>
 
     <main>
+        
         <section id="containerPresentation">
             <header>
-                <img src="img/img-componentes/logo-topo.svg" alt="logo" onload="SVGInject(this)">
+                <div id="containerHeader">
+                    <img src="img/img-componentes/logo-topo.svg" alt="logo" onload="SVGInject(this)" id="logo">
 
-                <nav>
-                    <a href="">
-                        <img src="img/icons/profile.svg" alt="image profile" onload="SVGInject(this)">
-                        <span>Minha conta</span>
-                    </a>
+                    <nav>
+                        <a href="">
+                            <img src="img/icons/profile.svg" alt="image profile" onload="SVGInject(this)">
+                            <span>Minha conta</span>
+                        </a>
 
-                    <a href="">Menu</a>
+                        <a href="">Menu</a>
 
-                    <a href="">Carrinho</a>
-                </nav>
+                        <a href="">Carrinho</a>
+                    </nav>
+                </div>
             </header>
 
             <div id="containerAbout">
@@ -164,11 +168,45 @@
                         <span>Adicoanar ao carrinho</span>
                     </button>
                 </div>
+
+                <div class="containerFoods">
+                    <h3>Hot Roll</h3>
+                    <p>10 unidades</p>
+
+                    <p>R$ 20,00</p>
+                    <button id="addToCart">
+                        <span>Adicoanar ao carrinho</span>
+                    </button>
+                </div>
+
+                <div class="containerFoods">
+                    <h3>Hot Roll</h3>
+                    <p>10 unidades</p>
+
+                    <p>R$ 20,00</p>
+                    <button id="addToCart">
+                        <span>Adicoanar ao carrinho</span>
+                    </button>
+                </div>
+
+                <div class="containerFoods">
+                    <h3>Hot Roll</h3>
+                    <p>10 unidades</p>
+
+                    <p>R$ 20,00</p>
+                    <button id="addToCart">
+                        <span>Adicoanar ao carrinho</span>
+                    </button>
+                </div>
             </div>
 
-            <button id="seeAllMenu">
-                <img src="img/icons/plus symbol.svg" alt="Plus Symbol" onload="SVGInject(this)">
-            </button>
+            <div id="seeAllMenu">
+                <button id="buttonMenu">
+                    <img src="img/icons/plus symbol.svg" alt="Plus Symbol" onload="SVGInject(this)">
+                    <span id="span">Veja todo o menu</span>
+                </button>
+            </div>
+            
 
         </section>
             
@@ -179,7 +217,7 @@
             </div>
 
             <div id="about">
-                <h2>O que dizem sobre o <strong>Wakizash</strong></h2>
+                <h2>O que dizem sobre o <br> <strong>Wakizash</strong></h2>
             </div>
 
             <div id="containerUsersAvaliations">
@@ -194,13 +232,13 @@
                 </div>
 
                 <div id="containerUsers">
-                    <div id="user">
-                        <div id="nameUser">
+                    <div class="user">
+                        <div class="nameUser">
                             <img src="img/img-persons/Wade.svg" alt="Image Person" onload="SVGInject(this)">
                             <p>Wade Warren</p>
                         </div>
 
-                        <div id="avaliationUser">
+                        <div class="avaliationUser">
                             <h3>Festival de Sabores!</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna posuere dictumst leo aliquam vitae, aliquam egestas.</p>
                         </div>
@@ -213,31 +251,33 @@
                 <div class="border" id="border2"></div>
             </div>
         </section>
-
-        <footer>
-            <div id="footerAbout">
-                <div id="aboutLogo">
-                    <img src="img/img-componentes/logo-topo.svg" alt="Logo" onload="SVGInject(this)">
-                    <p>Wakisash</p>
-                </div>
-                
-                <div id="socialMedias">
-                    <h4>Nos siga nas redes sociais</h4>
-                    <div>
-                        <img src="img/icons/instagram.svg" alt="Instagram" onload="SVGInject(this)">
-                        <img src="img/icons/facebook.svg" alt="Facebook" onload="SVGInject(this)">
-                        <img src="img/icons/tik-tok.svg" alt="Tik-Tok" onload="SVGInject(this)">
-                    </div>
-                </div>
-            </div>
-        </footer>
     </main>
+
+    <footer>
+        <div id="footerAbout">
+            <div id="aboutLogo">
+                <img src="img/img-componentes/logo-topo.svg" alt="Logo" onload="SVGInject(this)">
+                <p>Wakisash</p>
+            </div>
+
+            <p>Amor por entregar o melhor</p>
+        </div>
+            
+        <div id="socialMedias">
+            <h4>Nos siga nas redes sociais</h4>
+            <div>
+                <img src="img/icons/instagram.svg" alt="Instagram" onload="SVGInject(this)">
+                <img src="img/icons/facebook.svg" alt="Facebook" onload="SVGInject(this)">
+                <img src="img/icons/tik-tok.svg" alt="Tik-Tok" onload="SVGInject(this)">
+            </div>
+        </div>
+    </footer>
     
     <div id="me">
         <strong>Feito Por Tamirys Nogueira</strong>
         <img src="img/icons/heart.svg" alt="Heart" onload="SVGInject(this)">
     </div>
     
-
+    <script src="script/script.js"></script>
 </body>
 </html>
