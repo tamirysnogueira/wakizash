@@ -39,7 +39,7 @@
 
 ### Vercel
 Aqui você pode visualizar o projeto, é só clicar em:
-[Wakizash](https://Wakizash.vercel.app/)
+[Wakizash](https://wakizash.vercel.app/)
 
 <br>
 
