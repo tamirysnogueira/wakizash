@@ -870,6 +870,12 @@ footer #socialMedias div {
   #background {
     height: 3935px;
   }
+  #containerMenu #menu #listFoods li {
+    margin: 25px;
+  }
+  #containerMenu #menu #listFoods li:nth-child(6), #containerMenu #menu #listFoods li:nth-child(7) {
+    margin: 25px;
+  }
   #containerMenu #foods {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
