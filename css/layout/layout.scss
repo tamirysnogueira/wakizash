@@ -6,8 +6,7 @@
         }
 
         #containerHeader {
-            padding-left: 100px;
-            padding-right: 100px;
+            width: 800px;
         }
     }
 
@@ -74,6 +73,8 @@
         #containerUsersAvaliations {
             #containerUsers {
                 width: 100%;
+                padding-left: 100px;
+                padding-right: 100px;
 
                 flex-direction: column;
                 align-items: center;
@@ -92,6 +93,7 @@
 @media screen and (max-width: 860px){
     header {
         #containerHeader {
+            width: 500px;
             nav {
                 a {
                     display: none;
@@ -223,6 +225,11 @@
 }
 
 @media screen and (max-width: 550px) {
+    header {
+        #containerHeader {
+            width: 300px;
+        }
+    }
     main {
         width: 300px;
     }
@@ -291,12 +298,6 @@
         #about {
             h2 {
                 font-size: 30px;
-            }
-        }
-
-        #containerUsersAvaliations {
-            #containerUsers {
-                padding-left: 20px;
             }
         }
     }
