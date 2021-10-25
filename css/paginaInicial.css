@@ -25,7 +25,6 @@ body {
 main {
   width: 1224px;
   margin-top: 29px;
-  overflow-x: hidden;
 }
 
 #blurTop {
@@ -55,7 +54,7 @@ main {
   width: 100vw;
 }
 
-#containerPresentation header #containerHeader {
+header #containerHeader {
   width: 100%;
   left: 0;
   top: 0;
@@ -76,7 +75,7 @@ main {
           backdrop-filter: blur(20px);
 }
 
-#containerPresentation header nav {
+header nav {
   width: 521px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,7 +88,7 @@ main {
           align-items: center;
 }
 
-#containerPresentation header nav a {
+header nav a {
   text-decoration: none;
   color: #050607;
   font-size: 24px;
@@ -105,11 +104,11 @@ main {
   transition: 0.3s ease-in-out;
 }
 
-#containerPresentation header nav a:hover {
+header nav a:hover {
   color: #D2242D;
 }
 
-#containerPresentation header nav a::before {
+header nav a::before {
   content: '';
   position: absolute;
   background-color: #D2242D;
@@ -120,11 +119,11 @@ main {
   transition: 0.3s ease-in-out;
 }
 
-#containerPresentation header nav a:hover:before {
+header nav a:hover:before {
   width: 100%;
 }
 
-#containerPresentation header nav a:first-child {
+header nav a:first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,7 +132,7 @@ main {
           align-items: center;
 }
 
-#containerPresentation header nav a:first-child span {
+header nav a:first-child span {
   margin-left: 13px;
 }
 
@@ -550,7 +549,7 @@ main {
 
 #avaliations #containerUsersAvaliations #containerUsers {
   width: 1120px;
-  height: 380px;
+  height: 100%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,9 +561,9 @@ main {
 
 #avaliations #containerUsersAvaliations #containerUsers .user {
   width: 288px;
-  height: 100%;
-  -webkit-box-shadow: 1px 1px 200px rgba(221, 60, 69, 0.15);
-          box-shadow: 1px 1px 200px rgba(221, 60, 69, 0.15);
+  height: 400px;
+  -webkit-box-shadow: 1px 1px 60px rgba(221, 60, 69, 0.15);
+          box-shadow: 1px 1px 60px rgba(221, 60, 69, 0.15);
   border-radius: 10px;
   background: #D8D9D2;
 }
@@ -699,19 +698,19 @@ footer #socialMedias div {
 }
 
 @media screen and (max-width: 1364px) {
+  header #logo {
+    width: 60px;
+    height: 60px;
+  }
+  header #containerHeader {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
   main {
     width: 800px;
   }
   #blurAndImage {
     display: none;
-  }
-  #containerPresentation header #logo {
-    width: 60px;
-    height: 60px;
-  }
-  #containerPresentation header #containerHeader {
-    padding-left: 100px;
-    padding-right: 100px;
   }
   #containerPresentation #containerAbout {
     -webkit-box-orient: vertical;
@@ -729,7 +728,7 @@ footer #socialMedias div {
     display: none;
   }
   #background {
-    height: 3035px;
+    height: 2700px;
   }
   #chooseUs {
     -webkit-box-orient: vertical;
@@ -753,10 +752,22 @@ footer #socialMedias div {
     width: 188px;
     height: 289px;
   }
+  #avaliations {
+    height: 100%;
+  }
   #avaliations #containerUsersAvaliations #containerUsers {
     width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 100px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   footer {
     width: 800px;
@@ -764,6 +775,31 @@ footer #socialMedias div {
 }
 
 @media screen and (max-width: 860px) {
+  header #containerHeader nav {
+    width: 30px;
+    height: 3px;
+    background-color: #D2242D;
+    position: relative;
+  }
+  header #containerHeader nav a {
+    display: none;
+  }
+  header #containerHeader nav:before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: #D2242D;
+    top: 10px;
+  }
+  header #containerHeader nav:after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: #D2242D;
+    top: 20px;
+  }
   main {
     width: 500px;
   }
@@ -781,31 +817,6 @@ footer #socialMedias div {
   }
   #containerMenu #menu #listFoods li:nth-child(6), #containerMenu #menu #listFoods li:nth-child(7) {
     margin-top: 20px;
-  }
-  #containerPresentation header #containerHeader nav {
-    width: 30px;
-    height: 3px;
-    background-color: #D2242D;
-    position: relative;
-  }
-  #containerPresentation header #containerHeader nav a {
-    display: none;
-  }
-  #containerPresentation header #containerHeader nav:before {
-    content: '';
-    position: absolute;
-    width: 35px;
-    height: 3px;
-    background-color: #D2242D;
-    top: 10px;
-  }
-  #containerPresentation header #containerHeader nav:after {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 3px;
-    background-color: #D2242D;
-    top: 20px;
   }
   #containerPresentation #containerAbout div {
     width: 100%;

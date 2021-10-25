@@ -23,8 +23,6 @@ main {
     width: 1224px;
 
     margin-top: 29px;
-
-    overflow-x: hidden;
 }
 
 #blurTop {
@@ -56,73 +54,73 @@ main {
 
 }
 
-#containerPresentation {
-    header{
-        #containerHeader {
-            width: 100%;
-            left: 0;
-            top: 0;
-            position: fixed;
+header{
+    #containerHeader {
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0 348px;
+        padding-top: 24px;
+
+        z-index: 100;
+
+        backdrop-filter: blur(20px);
+    }
+
+    nav {
+        width: 521px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: $black-dark;
+            font-size: 24px;
+            font-weight: 300;
+            position: relative;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: center;
 
-            padding: 0 348px;
-            padding-top: 24px;
+            transition: 0.3s ease-in-out;
 
-            z-index: 100;
-
-            backdrop-filter: blur(20px);
-        }
-
-        nav {
-            width: 521px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            a {
-                text-decoration: none;
-                color: $black-dark;
-                font-size: 24px;
-                font-weight: 300;
-                position: relative;
-                display: flex;
-                justify-content: center;
-
-                transition: 0.3s ease-in-out;
-
-                &:hover {
-                    color: $red-medium;
-                }
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    background-color: $red-medium;
-                    width: 0;
-                    height: 2px;
-                    bottom: -5px;
-
-                    transition: 0.3s ease-in-out;
-                }
-
-                &:hover:before {
-                    width: 100%;
-                }
+            &:hover {
+                color: $red-medium;
             }
 
-            a:first-child {
-                display: flex;
-                align-items: center;
+            &::before {
+                content: '';
+                position: absolute;
+                background-color: $red-medium;
+                width: 0;
+                height: 2px;
+                bottom: -5px;
 
-                span {
-                    margin-left: 13px;
-                }
+                transition: 0.3s ease-in-out;
+            }
+
+            &:hover:before {
+                width: 100%;
+            }
+        }
+
+        a:first-child {
+            display: flex;
+            align-items: center;
+
+            span {
+                margin-left: 13px;
             }
         }
     }
+}
 
+#containerPresentation {
     #containerAbout {
         height: 398px;
         display: flex;
@@ -513,7 +511,7 @@ main {
 
         #containerUsers {
             width: 1120px;
-            height: 380px;
+            height: 100%;
 
             margin: auto;
 
@@ -522,9 +520,9 @@ main {
 
             .user {
                 width: 288px;
-                height: 100%;
+                height: 400px;
 
-                box-shadow: 1px 1px 200px rgba(221, 60, 69, 0.15);
+                box-shadow: 1px 1px 60px rgba(221, 60, 69, 0.15);
                 border-radius: 10px;
                 background: $gray-medium;
 
@@ -645,6 +643,8 @@ footer {
         margin-right: 14px;
     }
 }
+
+
 
 @import './layout/layout.scss'
 
