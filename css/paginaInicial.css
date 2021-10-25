@@ -71,6 +71,7 @@ header {
 header #containerHeader {
   width: 1224px;
   padding-top: 24px;
+  padding-bottom: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -782,9 +783,12 @@ footer #socialMedias div {
 @media screen and (max-width: 860px) {
   header #containerHeader {
     width: 500px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header #containerHeader nav {
-    width: 30px;
+    width: 35px;
     height: 3px;
     background-color: #D2242D;
     position: relative;
@@ -795,10 +799,10 @@ footer #socialMedias div {
   header #containerHeader nav:before {
     content: '';
     position: absolute;
-    width: 35px;
+    width: 30px;
     height: 3px;
     background-color: #D2242D;
-    top: 10px;
+    top: -10px;
   }
   header #containerHeader nav:after {
     content: '';
@@ -806,7 +810,7 @@ footer #socialMedias div {
     width: 40px;
     height: 3px;
     background-color: #D2242D;
-    top: 20px;
+    top: 10px;
   }
   main {
     width: 500px;
@@ -890,7 +894,7 @@ footer #socialMedias div {
     font-size: 18px;
   }
   #background {
-    height: 3935px;
+    height: 4135px;
   }
   #containerMenu #menu #listFoods li {
     margin: 25px;

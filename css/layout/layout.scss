@@ -94,12 +94,13 @@
     header {
         #containerHeader {
             width: 500px;
+            align-items: center;
             nav {
                 a {
                     display: none;
                 }
 
-                width: 30px;
+                width: 35px;
                 height: 3px;
                 background-color: $red-medium;
                 position: relative;
@@ -107,10 +108,10 @@
                 &:before {
                     content: '';
                     position: absolute;
-                    width: 35px;
+                    width: 30px;
                     height: 3px;
                     background-color: $red-medium;
-                    top: 10px;
+                    top: -10px;
                 }
 
                 &:after {
@@ -119,7 +120,7 @@
                     width: 40px;
                     height: 3px;
                     background-color: $red-medium;
-                    top: 20px;
+                    top: 10px;
                 }
             }
         }
@@ -246,7 +247,7 @@
     }
 
     #background {
-        height: 3935px;
+        height: 4135px;
     }
 
     #containerMenu {
