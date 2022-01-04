@@ -1,0 +1,29 @@
+@import '../colors/colors.scss';
+@import '../paginaInicial.scss';
+
+
+
+
+#containerMenu {
+    #menu {
+        #listFoods {
+            li {
+                a {
+                    color: black;
+                    text-decoration: none;
+
+                    transition: 0.2s ease-in-out;
+
+                    &:hover {
+                        color: $red-medium;
+                    }
+                }
+            }
+        }
+    }
+    #foods {
+        .containerFoods {
+            background-image: url(../../img/img-produtos/california.svg);
+        }
+    }
+}
