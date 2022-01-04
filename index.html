@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/img-componentes/logo-topo.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/paginaInicial.css">
+    li
     <script src="svg-inject.min.js"></script>
     
     <title>Wakizash</title>
@@ -24,12 +25,12 @@
             <img src="img/img-componentes/logo-topo.svg" alt="logo" onload="SVGInject(this)" id="logo">
 
             <nav>
-                <a href="">
+                <a href="index.html">
                     <img src="img/icons/profile.svg" alt="image profile" onload="SVGInject(this)">
                     <span>Minha conta</span>
                 </a>
 
-                <a href="">Menu</a>
+                <a href="views/menu.html">Menu</a>
 
                 <a href="">Carrinho</a>
             </nav>
@@ -162,42 +163,42 @@
             </div>
             
             <div id="foods">
-                <div class="containerFoods">
+                <div class="containerFoods" id="Hot Holl">
                     <h3>Hot Roll</h3>
                     <p>10 unidades</p>
 
                     <p>R$ 20,00</p>
-                    <button id="addToCart">
+                    <button onclick="adicionar(this)">
                         <span>Adicionar ao carrinho</span>
                     </button>
                 </div>
 
-                <div class="containerFoods">
+                <div class="containerFoods" id="Hot Holl">
                     <h3>Hot Roll</h3>
                     <p>10 unidades</p>
 
                     <p>R$ 20,00</p>
-                    <button id="addToCart">
+                    <button onclick="adicionar(this)">
                         <span>Adicionar ao carrinho</span>
                     </button>
                 </div>
 
-                <div class="containerFoods">
+                <div class="containerFoods" id="Hot Holl">
                     <h3>Hot Roll</h3>
                     <p>10 unidades</p>
 
                     <p>R$ 20,00</p>
-                    <button id="addToCart">
+                    <button onclick="adicionar(this)">
                         <span>Adicionar ao carrinho</span>
                     </button>
                 </div>
 
-                <div class="containerFoods">
+                <div class="containerFoods" id="Hot Holl">
                     <h3>Hot Roll</h3>
                     <p>10 unidades</p>
 
                     <p>R$ 20,00</p>
-                    <button id="addToCart">
+                    <button onclick="adicionar(this)">
                         <span>Adicionar ao carrinho</span>
                     </button>
                 </div>
@@ -305,6 +306,6 @@
         <img src="img/icons/heart.svg" alt="Heart" onload="SVGInject(this)">
     </div>
     
-    <script src="script/script.js"></script>
+    <script src="script/menu.js"></script>
 </body>
 </html>
