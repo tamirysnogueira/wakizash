@@ -1,0 +1,54 @@
+@import '../colors/colors.scss';
+@import '../paginaInicial.scss';
+
+section {
+    margin-top: 194px;
+
+    h1 {
+        font-size: 3rem;
+
+        color: $red-medium;
+
+        text-align: center;
+    }
+
+    #bar {
+        width: 100%;
+        height: 3px;
+        background-color: $red-medium;
+        margin-top: 40px;
+        margin-bottom: 58px;
+    }
+
+    #containerProducts {
+        width: 100%;
+
+        #listProducts {
+            ul {
+                li {
+                    display: flex;
+                    align-items: center;
+
+                    justify-content: space-between;
+
+                    border-bottom: 1px solid $red-light;
+
+                    margin-bottom: 40px;
+                    padding-bottom: 30px;
+
+                    img {
+                        width: 100px;
+                    }
+
+                    p {
+                        font-size: 1.3rem;
+                    }
+
+                    span {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
