@@ -1,9 +1,6 @@
 @import '../colors/colors.scss';
 @import '../paginaInicial.scss';
 
-
-
-
 #containerMenu {
     #menu {
         #listFoods {
@@ -19,11 +16,6 @@
                     }
                 }
             }
-        }
-    }
-    #foods {
-        .containerFoods {
-            background-image: url(../../img/img-produtos/california.svg);
         }
     }
 }

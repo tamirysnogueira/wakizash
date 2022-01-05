@@ -27,33 +27,6 @@ main {
   margin-top: 29px;
 }
 
-#blurTop {
-  position: absolute;
-  width: 100vw;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-}
-
-#blurTop img {
-  width: 100%;
-  height: 100vh;
-}
-
-#blurAndImage {
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-  top: 500px;
-  width: 100vw;
-  left: 0;
-}
-
-#blurAndImage img {
-  width: 100vw;
-}
-
 header {
   width: 100%;
   position: fixed;
@@ -139,114 +112,6 @@ header nav a:first-child {
 
 header nav a:first-child span {
   margin-left: 13px;
-}
-
-#containerPresentation #containerAbout {
-  height: 398px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 223px;
-  margin-bottom: 118px;
-}
-
-#containerPresentation #containerAbout div {
-  width: 496px;
-}
-
-#containerPresentation #containerAbout div p strong {
-  font-weight: 600;
-  color: #D2242D;
-}
-
-#containerPresentation #containerAbout div p:first-child {
-  width: 450px;
-  margin-bottom: 96px;
-  font-size: 32px;
-  font-weight: 400;
-}
-
-#containerPresentation #containerAbout div p:nth-child(2) {
-  font-size: 24px;
-  font-weight: 300;
-}
-
-.detail {
-  text-align: center;
-}
-
-.detail p {
-  font-size: 36px;
-  color: #B21921;
-}
-
-.detail .border {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  border-bottom: 5px solid #D2242D;
-}
-
-#background {
-  position: absolute;
-  margin-top: 5px;
-  left: 0;
-  width: 100vw;
-  height: 2235px;
-  background-color: #242526;
-  z-index: -1000;
-}
-
-#chooseUs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 315px;
-}
-
-#chooseUs #description {
-  width: 618px;
-}
-
-#chooseUs #description h2 {
-  font-size: 56px;
-  color: white;
-  margin-bottom: 211px;
-}
-
-#chooseUs #description p {
-  font-size: 22px;
-  color: #C5C6C0;
-}
-
-#chooseUs #Ingredients {
-  width: 412px;
-  height: 481px;
-  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='4' ry='4' stroke='%23B21921FF' stroke-width='4' stroke-dasharray='20' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
-  border-radius: 4px;
-  padding: 61px 0 0 61px;
-}
-
-#chooseUs #Ingredients h3 {
-  font-size: 30px;
-  font-weight: 500;
-  color: white;
-}
-
-#chooseUs #Ingredients ul {
-  margin-top: 32px;
 }
 
 #chooseUs #Ingredients ul li {
@@ -447,168 +312,20 @@ header nav a:first-child span {
   opacity: 100%;
 }
 
-#containerMenu #seeAllMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.detail {
+  text-align: center;
 }
 
-#containerMenu #seeAllMenu button {
-  width: 300px;
-  height: 90px;
-  border-radius: 10px;
-  border: none;
-  background-color: #D2242D;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#containerMenu #seeAllMenu button span {
-  font-size: 20px;
-  color: white;
-  font-weight: 400;
-  margin-left: 20px;
-}
-
-#containerMenu #seeAllMenu button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  background-color: #DD3C45;
-  cursor: pointer;
-}
-
-#avaliations {
-  margin-top: 315px;
-}
-
-#avaliations #lovers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 43px;
-}
-
-#avaliations #lovers p {
-  margin-left: 29px;
-  font-size: 18px;
-}
-
-#avaliations #about h2 {
-  font-size: 40px;
-  font-weight: 400;
-}
-
-#avaliations #about h2 strong {
-  font-weight: 600;
+.detail p {
+  font-size: 36px;
   color: #B21921;
 }
 
-#avaliations #containerUsersAvaliations {
-  margin-top: 20px;
-  margin-bottom: 196px;
-}
-
-#avaliations #containerUsersAvaliations #buttonsUsers {
+.detail .border {
+  position: absolute;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-bottom: 52px;
-}
-
-#avaliations #containerUsersAvaliations #buttonsUsers button {
-  width: 46px;
-  height: 46px;
-  border-radius: 100%;
-  border: 1px solid #B21921;
-  background-color: transparent;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-#avaliations #containerUsersAvaliations #buttonsUsers button:hover {
-  background-color: #D2242D;
-  border: none;
-}
-
-#avaliations #containerUsersAvaliations #buttonsUsers #next {
-  margin-left: 56px;
-}
-
-#avaliations #containerUsersAvaliations #containerUsers {
-  width: 1120px;
-  height: 100%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#avaliations #containerUsersAvaliations #containerUsers .user {
-  width: 288px;
-  height: 400px;
-  -webkit-box-shadow: 1px 1px 60px rgba(221, 60, 69, 0.15);
-          box-shadow: 1px 1px 60px rgba(221, 60, 69, 0.15);
-  border-radius: 10px;
-  background: #D8D9D2;
-}
-
-#avaliations #containerUsersAvaliations #containerUsers .user .nameUser {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 67px;
-  padding-bottom: 74px;
-}
-
-#avaliations #containerUsersAvaliations #containerUsers .user .nameUser p {
-  font-weight: 500;
-  font-size: 15px;
-  margin-left: 17px;
-  color: #B21921;
-}
-
-#avaliations #containerUsersAvaliations #containerUsers .user .avaliationUser {
-  margin-left: 24px;
-}
-
-#avaliations #containerUsersAvaliations #containerUsers .user .avaliationUser h3 {
-  font-weight: 500;
-  font-size: 20px;
-  color: #DD3C45;
-}
-
-#avaliations #containerUsersAvaliations #containerUsers .user .avaliationUser p {
-  font-size: 15px;
-  width: 240px;
-  margin-top: 12px;
+  left: 0;
+  border-bottom: 5px solid #D2242D;
 }
 
 footer {
@@ -714,36 +431,7 @@ footer #socialMedias div {
   main {
     width: 800px;
   }
-  #blurAndImage {
-    display: none;
-  }
-  #containerPresentation #containerAbout {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #containerPresentation #containerAbout div {
-    width: 600px;
-  }
-  #containerPresentation #containerAbout div p:first-child {
-    width: 100%;
-  }
-  #containerPresentation #containerAbout svg {
-    display: none;
-  }
-  #background {
-    height: 2700px;
-  }
-  #chooseUs {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #chooseUs #Ingredients {
-    margin-top: 60px;
-  }
+  
   #containerMenu #menu {
     width: 800px;
   }
@@ -757,25 +445,7 @@ footer #socialMedias div {
     width: 188px;
     height: 289px;
   }
-  #avaliations {
-    height: 100%;
-  }
-  #avaliations #containerUsersAvaliations #containerUsers {
-    width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 100px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  
   footer {
     width: 800px;
   }
@@ -831,41 +501,6 @@ footer #socialMedias div {
   #containerMenu #menu #listFoods li:nth-child(6), #containerMenu #menu #listFoods li:nth-child(7) {
     margin-top: 20px;
   }
-  #containerPresentation #containerAbout div {
-    width: 100%;
-  }
-  #containerPresentation #containerAbout div p:first-child {
-    font-size: 25px;
-  }
-  #containerPresentation #containerAbout div p:nth-child(2) {
-    font-size: 20px;
-  }
-  #containerPresentation #detail p {
-    font-size: 28px;
-  }
-  #background {
-    height: 2935px;
-  }
-  #chooseUs #description {
-    width: 100%;
-  }
-  #chooseUs #description h2 {
-    font-size: 46px;
-  }
-  #chooseUs #description p {
-    font-size: 18px;
-  }
-  #chooseUs #Ingredients {
-    width: 312px;
-    height: 401px;
-    padding: 41px 0 0 41px;
-  }
-  #chooseUs #Ingredients h3 {
-    font-size: 25px;
-  }
-  #chooseUs #Ingredients #listIngredients li {
-    font-size: 18px;
-  }
   #containerMenu #foods .containerFoods:nth-child(3), #containerMenu #foods .containerFoods:nth-child(4) {
     margin-top: 80px;
   }
@@ -888,15 +523,7 @@ footer #socialMedias div {
   main {
     width: 300px;
   }
-  #containerPresentation #containerAbout {
-    height: 100%;
-  }
-  #containerPresentation #containerAbout div p:nth-child(2) {
-    font-size: 18px;
-  }
-  #background {
-    height: 4135px;
-  }
+  
   #containerMenu #menu #listFoods li {
     margin: 25px;
   }
@@ -917,22 +544,7 @@ footer #socialMedias div {
   #containerMenu #foods .containerFoods:nth-child(2) {
     margin-top: 50px;
   }
-  #containerMenu #seeAllMenu #buttonMenu {
-    width: 200px;
-    height: 90px;
-  }
-  #containerMenu #seeAllMenu #buttonMenu svg {
-    width: 25px;
-  }
-  #containerMenu #seeAllMenu #buttonMenu span {
-    font-size: 16px;
-  }
-  #avaliations #lovers p {
-    font-size: 16px;
-  }
-  #avaliations #about h2 {
-    font-size: 30px;
-  }
+  
   footer {
     width: 300px;
   }
@@ -947,9 +559,5 @@ footer #socialMedias div {
 
 #containerMenu #menu #listFoods li a:hover {
   color: #D2242D;
-}
-
-#containerMenu #foods .containerFoods {
-  background-image: url(../../img/img-produtos/california.svg);
 }
 /*# sourceMappingURL=menu.css.map */
