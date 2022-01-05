@@ -41,19 +41,6 @@ let allProducts = [
     }
 ]
 
-onload = function() {
-    let pegar = localStorage.getItem('soma')
-    let teste = document.getElementById('teste')
-
-    if (pegar == null){
-        return teste.innerHTML = '0'
-    }
-
-    if (pegar != null){
-        return teste.innerHTML = localStorage.getItem('soma')
-    }
-}
-
 let foods = document.querySelector('.foodsMenu')
 for(let products of allProducts){
     foods.innerHTML += `
@@ -82,23 +69,31 @@ function adicionar(produto){
     let price = ()=> {
         for(let products of allProducts){
             if(id == products.name){
+                let arrayId = JSON.parse(localStorage.getItem('id')) || []
+                arrayId.push(products.name)
+
+                localStorage.setItem('id', JSON.stringify(arrayId))
+
                 return parseInt(products.price) 
             }
         }
     }
 
-    calc(price())
+    let arrayPrices = JSON.parse(localStorage.getItem('price')) || []
+    
+
+    arrayPrices.push(price())
+
+    localStorage.setItem('price', JSON.stringify(arrayPrices))
+
+    calc()
 }
 
-function calc(price){
-    let teste = document.getElementById('teste')
+function calc(){
+    let soma = 0
+    for(let price of JSON.parse(localStorage.getItem('price'))){
+        soma += price
+    }
 
-    let value = parseInt(teste.innerHTML) 
-
-    let persistir = value + price
-
-    localStorage.setItem('soma', persistir)
-
-    teste.innerHTML = localStorage.getItem('soma')
-
+    localStorage.setItem('soma', soma)
 }
