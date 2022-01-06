@@ -1,43 +1,51 @@
-let allProducts = [
-    {
-        name: 'Hot Holl',
-        price: '20',
-        image: '../../img/img-produtos/hot-roll.svg'
-    },
-    {
-        name: 'California',
-        price: '30',
-        image: '../../img/img-produtos/california.svg'
-    },
-    {
-        name: 'Makis',
-        price: '10',
-        image: '../../img/img-produtos/makis.svg'
-    },
-    {
-        name: 'Oshizushi',
-        price: '10',
-        image: '../../img/img-produtos/oshizushi.svg'
-    },
-    {
-        name: 'Rainbow Rolls',
-        price: '20',
-        image: '../../img/img-produtos/rainbow-rolls.svg'
-    },
-    {
-        name: 'Sashimi',
-        price: '30',
-        image: '../../img/img-produtos/sashimi.svg'
-    },
-    {
-        name: 'Spring Rolls',
-        price: '40',
-        image: '../../img/img-produtos/spring-rolls.svg'
-    },
-    {
-        name: 'Sushi',
-        price: '25',
-        image: '../../img/img-produtos/california.svg'
-    }
-]
+let empty = document.getElementById('empty')
+let deleteButton = document.getElementById('delete')
 
+if(localStorage.getItem('id') == null){
+    deleteButton.style.display = 'none'
+    empty.style.display = 'block'
+
+} else {
+    empty.style.display = 'none'
+    deleteButton.style.display = 'flex'
+
+
+    let arrayId = JSON.parse(localStorage.getItem('id'))
+    let containerList = document.getElementById('list')
+    
+    for(let id of arrayId){
+        for(let product of allProducts){
+            if(id == product.name){
+                containerList.innerHTML += `
+                    <li>
+                        <img src="${product.image}" alt="">
+                        <p>${product.name}</p>
+                        <span>R$ ${product.price},00</span>
+                    </li>
+                `
+            }
+        }
+        
+    }
+
+    let totalSpan = document.getElementById('totalSpan')
+
+
+    totalSpan.innerHTML = localStorage.getItem('soma')
+}
+
+deleteButton.addEventListener('click', ()=> {
+    let escolha = window.confirm('Remover todos os itens?')
+
+    if (escolha != true){
+        return false
+    }
+    
+    if (escolha == true){
+        localStorage.clear()
+
+        alert('Itens Removidos!')
+
+        location.reload()
+    }
+})

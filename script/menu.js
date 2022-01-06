@@ -2,7 +2,7 @@ let allProducts = [
     {
         name: 'Hot Holl',
         price: '20',
-        image: '../../img/img-produtos/hot-roll.svg'
+        image: '../../img/img-produtos/hot-holl.svg'
     },
     {
         name: 'California',
@@ -30,7 +30,7 @@ let allProducts = [
         image: '../../img/img-produtos/sashimi.svg'
     },
     {
-        name: 'Spring Rolls',
+        name: 'Spring',
         price: '40',
         image: '../../img/img-produtos/spring-rolls.svg'
     },
@@ -39,6 +39,7 @@ let allProducts = [
         price: '25',
         image: '../../img/img-produtos/california.svg'
     }
+
 ]
 
 let foods = document.querySelector('.foodsMenu')
@@ -96,4 +97,6 @@ function calc(){
     }
 
     localStorage.setItem('soma', soma)
+
+    alert('Produto adicionado ao carrinho!')
 }
