@@ -44,9 +44,9 @@ Aqui você pode visualizar o projeto, é só clicar em:
 <br>
 
 ### 🚧 Features Futuros:
-- Fazer uma página para o carrinho de compras
-- Fazer uma página para o Menu
-- Lógica para fazer os produtos irem para o carrinho de compras e salvá-los com LocalStorage
+✔️ Fazer uma página para o carrinho de compras
+✔️ Fazer uma página para o Menu
+✔️ Lógica para fazer os produtos irem para o carrinho de compras e salvá-los com LocalStorage
 - Fazer um menu interativo para mostrar a navegação na parte responsiva: Menu, Minha Conta e Carrinho
 
 <br>
