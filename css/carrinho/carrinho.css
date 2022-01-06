@@ -958,9 +958,16 @@ section #bar {
 
 section #containerProducts {
   width: 100%;
+  margin-bottom: 10rem;
 }
 
-section #containerProducts #listProducts ul li {
+section #containerProducts #empty {
+  text-align: center;
+  margin: 10rem 0;
+  display: none;
+}
+
+section #containerProducts #list li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -975,15 +982,85 @@ section #containerProducts #listProducts ul li {
   padding-bottom: 30px;
 }
 
-section #containerProducts #listProducts ul li img {
+section #containerProducts #list li img {
   width: 100px;
 }
 
-section #containerProducts #listProducts ul li p {
+section #containerProducts #list li p {
   font-size: 1.3rem;
 }
 
-section #containerProducts #listProducts ul li span {
+section #containerProducts #list li span {
   font-size: 1.6rem;
+}
+
+section #containerProducts #total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+section #containerProducts #delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section #containerProducts #total h2 {
+  font-size: 2.5rem;
+}
+
+section #containerProducts #delete {
+  margin-top: 5rem;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section #containerProducts #delete button {
+  border: 1px solid #B21921;
+  padding: 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #B21921;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+section #containerProducts #delete button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+section #containerProducts #delete button::before {
+  content: '';
+  height: 100%;
+  width: 0;
+  background-color: #DD3C45;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+section #containerProducts #delete button:hover::before {
+  width: 100%;
 }
 /*# sourceMappingURL=carrinho.css.map */

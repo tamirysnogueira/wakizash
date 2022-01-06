@@ -2,7 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "layout.scss"
+        "layout.scss",
+        "../colors/colors.scss"
     ],
     "names": [],
     "file": "layout.css"

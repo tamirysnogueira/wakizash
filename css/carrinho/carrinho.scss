@@ -23,12 +23,19 @@ section {
     #containerProducts {
         width: 100%;
 
-        #listProducts {
-            ul {
+        margin-bottom: 10rem;
+
+        #empty {
+            text-align: center;
+            margin: 10rem 0;
+
+            display: none;
+        }
+
+        #list {
                 li {
                     display: flex;
                     align-items: center;
-
                     justify-content: space-between;
 
                     border-bottom: 1px solid $red-light;
@@ -47,6 +54,70 @@ section {
                     span {
                         font-size: 1.6rem;
                     }
+                }
+            }
+        
+
+        #total {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #delete {
+            display: flex;
+            justify-content: center;
+        }
+
+        #total {
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        #delete {
+            margin-top: 5rem;
+            display: none;
+            justify-content: center;
+
+            button {
+                border: 1px solid $red-dark;
+                
+                padding: 1.2rem;
+                font-size: 1rem;
+                font-weight: 500;
+                color: $red-dark;
+
+                background-color: transparent;
+
+                display: flex;
+                justify-content: center;
+
+                position: relative;
+
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    color: white;
+                    cursor: pointer;
+                }
+
+                &::before {
+                    content: '';
+                    height: 100%;
+                    width: 0;
+                    background-color: $red-light;
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    z-index: -1;
+
+                    transition: 0.3s ease-in-out;
+                }
+
+                &:hover::before {
+                    width: 100%;
                 }
             }
         }
