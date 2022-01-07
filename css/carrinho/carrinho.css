@@ -24,14 +24,14 @@ body {
 
 main {
   width: 1224px;
-  margin-top: 29px;
+  margin-top: 5rem;
 }
 
 #blurTop {
   position: absolute;
   width: 100vw;
   z-index: -1;
-  top: 0;
+  top: 150px;
   left: 0;
   overflow: hidden;
 }
@@ -198,7 +198,7 @@ header nav a:first-child span {
   margin-top: 5px;
   left: 0;
   width: 100vw;
-  height: 2235px;
+  height: 2135px;
   background-color: #242526;
   z-index: -1000;
 }
@@ -361,10 +361,6 @@ header nav a:first-child span {
   margin-bottom: 143px;
 }
 
-#containerMenu #foods div:nth-child(5), #containerMenu #foods div:nth-child(6), #containerMenu #foods div:nth-child(7), #containerMenu #foods div:nth-child(8) {
-  margin-top: 80px;
-}
-
 #containerMenu #foods .containerFoods {
   width: 288px;
   height: 389px;
@@ -381,7 +377,7 @@ header nav a:first-child span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../img/img-produtos/oshizushi.svg);
+  background-image: url(../img/img-produtos/hot-holl.svg);
   border-radius: 10px;
   position: relative;
   z-index: 1;
@@ -456,7 +452,7 @@ header nav a:first-child span {
           justify-content: center;
 }
 
-#containerMenu #seeAllMenu button {
+#containerMenu #seeAllMenu a {
   width: 300px;
   height: 90px;
   border-radius: 10px;
@@ -473,16 +469,17 @@ header nav a:first-child span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-decoration: none;
 }
 
-#containerMenu #seeAllMenu button span {
+#containerMenu #seeAllMenu a span {
   font-size: 20px;
   color: white;
   font-weight: 400;
   margin-left: 20px;
 }
 
-#containerMenu #seeAllMenu button:hover {
+#containerMenu #seeAllMenu a:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background-color: #DD3C45;
@@ -490,7 +487,7 @@ header nav a:first-child span {
 }
 
 #avaliations {
-  margin-top: 315px;
+  margin-top: 515px;
 }
 
 #avaliations #lovers {
@@ -733,7 +730,7 @@ footer #socialMedias div {
     display: none;
   }
   #background {
-    height: 2700px;
+    height: 2600px;
   }
   #chooseUs {
     -webkit-box-orient: vertical;
@@ -844,7 +841,7 @@ footer #socialMedias div {
     font-size: 28px;
   }
   #background {
-    height: 2935px;
+    height: 2735px;
   }
   #chooseUs #description {
     width: 100%;
@@ -895,7 +892,7 @@ footer #socialMedias div {
     font-size: 18px;
   }
   #background {
-    height: 4135px;
+    height: 3635px;
   }
   #containerMenu #menu #listFoods li {
     margin: 25px;

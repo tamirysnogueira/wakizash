@@ -320,9 +320,7 @@ header{
 
         margin-bottom: 143px;
 
-        div:nth-child(5), div:nth-child(6), div:nth-child(7), div:nth-child(8) {
-            margin-top: 80px;
-        }
+        gap: 20px;
 
         .containerFoods {
             width: 288px;
@@ -858,14 +856,6 @@ footer {
         }
     }
 
-    #containerMenu {
-        #foods {
-            .containerFoods:nth-child(3), .containerFoods:nth-child(4){
-                margin-top: 80px;
-            }
-        }
-    }
-
     footer {
         width: 500px;
         flex-direction: column;
@@ -918,10 +908,6 @@ footer {
             flex-wrap: nowrap;
             align-items: center;
             flex-direction: column;
-
-            .containerFoods:nth-child(2) {
-                margin-top: 50px;
-            }
         }
 
         #seeAllMenu {
