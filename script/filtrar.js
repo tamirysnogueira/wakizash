@@ -7,7 +7,13 @@ for(let li of listLi){
         for(let id of allProducts){
             if(li.innerText == id.name){
                 let divAtual = document.getElementById(`${li.innerText}`)
-                divAtual.style.display = 'none'
+                let nameCurrent = document.getElementById(`nameProduct`)
+
+                divAtual.style.display = 'flex'
+                nameCurrent.innerHTML = `${li.innerText}`
+            } else {
+                let othersDiv = document.getElementById(`${id.name}`)
+                othersDiv.style.display = 'none'
             }
         }
     })
