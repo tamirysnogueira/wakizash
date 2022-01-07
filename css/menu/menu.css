@@ -31,13 +31,12 @@ main {
   position: absolute;
   width: 100vw;
   z-index: -1;
-  top: 200px;
+  top: 150px;
   left: 0;
   overflow: hidden;
 }
 
 #blurTop img {
-  margin-top: 200px;
   width: 100%;
   height: 100vh;
 }
@@ -360,10 +359,7 @@ header nav a:first-child span {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 143px;
-}
-
-#containerMenu #foods div:nth-child(5), #containerMenu #foods div:nth-child(6), #containerMenu #foods div:nth-child(7), #containerMenu #foods div:nth-child(8) {
-  margin-top: 80px;
+  gap: 20px;
 }
 
 #containerMenu #foods .containerFoods {
@@ -382,7 +378,7 @@ header nav a:first-child span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../img/img-produtos/hot-roll.svg);
+  background-image: url(../img/img-produtos/hot-holl.svg);
   border-radius: 10px;
   position: relative;
   z-index: 1;
@@ -868,9 +864,6 @@ footer #socialMedias div {
   #chooseUs #Ingredients #listIngredients li {
     font-size: 18px;
   }
-  #containerMenu #foods .containerFoods:nth-child(3), #containerMenu #foods .containerFoods:nth-child(4) {
-    margin-top: 80px;
-  }
   footer {
     width: 500px;
     -webkit-box-orient: vertical;
@@ -916,9 +909,6 @@ footer #socialMedias div {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #containerMenu #foods .containerFoods:nth-child(2) {
-    margin-top: 50px;
-  }
   #containerMenu #seeAllMenu #buttonMenu {
     width: 200px;
     height: 90px;
@@ -952,5 +942,9 @@ footer #socialMedias div {
 #containerMenu #menu #listFoods li a:hover {
   color: #D2242D;
   cursor: pointer;
+}
+
+#containerMenu #foods {
+  gap: 20px;
 }
 /*# sourceMappingURL=menu.css.map */
