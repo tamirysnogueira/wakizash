@@ -25,7 +25,7 @@ let allProducts = [
         image: '../../img/img-produtos/rainbow-rolls.svg'
     },
     {
-        name: 'Sashimi',
+        name: 'Sashimis',
         price: '30',
         image: '../../img/img-produtos/sashimi.svg'
     },
@@ -37,7 +37,7 @@ let allProducts = [
     {
         name: 'Sushi',
         price: '25',
-        image: '../../img/img-produtos/california.svg'
+        image: '../../img/img-produtos/sushi.svg'
     }
 
 ]
