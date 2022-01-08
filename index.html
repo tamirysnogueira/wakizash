@@ -24,7 +24,7 @@
         <div id="containerHeader">
             <img src="img/img-componentes/logo-topo.svg" alt="logo" onload="SVGInject(this)" id="logo">
 
-            <nav>
+            <nav id="navMenuDesktop">
                 <a href="index.html">
                     <img src="img/icons/home.svg" alt="image profile" onload="SVGInject(this)">
                     <span>Home</span>
@@ -34,6 +34,25 @@
 
                 <a href="views/carrinho.html">Carrinho</a>
             </nav>
+
+            <div id="menuHamburguer">
+                <nav>
+                </nav>
+            </div>
+
+            <div id="containerMenuMobile">
+                <nav>
+                    <a href="index.html">
+                        <img src="img/icons/home.svg" alt="image profile" onload="SVGInject(this)">
+                        <span>Home</span>
+                    </a>
+    
+                    <a href="views/menu.html">Menu</a>
+    
+                    <a href="views/carrinho.html">Carrinho</a>
+                </nav>
+                <img src="img/icons/close.png" alt="" id="closeMenu">
+            </div>
         </div>
             
     </header>
@@ -175,15 +194,6 @@
             </div>
 
             <div id="containerUsersAvaliations">
-                <div id="buttonsUsers">
-                    <button id="previous">
-                        <img src="img/icons/previous arrow.svg" alt="Previous Arrow" onload="SVGInject(this)">
-                    </button>
-    
-                    <button id="next">
-                        <img src="img/icons/next arrow.svg" alt="Next Arrow" onload="SVGInject(this)">
-                    </button>
-                </div>
 
                 <div id="containerUsers">
                     <div class="user">
@@ -235,7 +245,7 @@
         <div id="footerAbout">
             <div id="aboutLogo">
                 <img src="img/img-componentes/logo-topo.svg" alt="Logo" onload="SVGInject(this)">
-                <p>Wakisash</p>
+                <p>Wakizash</p>
             </div>
 
             <p>Amor por entregar o melhor</p>
@@ -257,6 +267,7 @@
     </div>
     
     <script src="script/menu.js"></script>
-    
+    <script src="../script/menuMobile.js"></script>
+
 </body>
 </html>
