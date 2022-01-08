@@ -1,5 +1,4 @@
 @import '../colors/colors.scss';
-@import '../paginaInicial.scss';
 
 section {
     margin-top: 194px;
@@ -118,6 +117,20 @@ section {
 
                 &:hover::before {
                     width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    main {
+        section {
+            #list {
+                li {
+                    p {
+                        display: none;
+                    }
                 }
             }
         }

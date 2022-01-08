@@ -31,7 +31,6 @@ main {
   position: absolute;
   width: 100vw;
   z-index: -1;
-  top: 150px;
   left: 0;
   overflow: hidden;
 }
@@ -80,7 +79,7 @@ header #containerHeader {
           justify-content: space-between;
 }
 
-header nav {
+header #navMenuDesktop {
   width: 521px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,7 +92,7 @@ header nav {
           align-items: center;
 }
 
-header nav a {
+header #navMenuDesktop a {
   text-decoration: none;
   color: #050607;
   font-size: 24px;
@@ -109,11 +108,11 @@ header nav a {
   transition: 0.3s ease-in-out;
 }
 
-header nav a:hover {
+header #navMenuDesktop a:hover {
   color: #D2242D;
 }
 
-header nav a::before {
+header #navMenuDesktop a::before {
   content: '';
   position: absolute;
   background-color: #D2242D;
@@ -124,11 +123,11 @@ header nav a::before {
   transition: 0.3s ease-in-out;
 }
 
-header nav a:hover:before {
+header #navMenuDesktop a:hover:before {
   width: 100%;
 }
 
-header nav a:first-child {
+header #navMenuDesktop a:first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,8 +136,115 @@ header nav a:first-child {
           align-items: center;
 }
 
-header nav a:first-child span {
+header #navMenuDesktop a:first-child span {
   margin-left: 13px;
+}
+
+header #menuHamburguer {
+  display: none;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+header #menuHamburguer nav {
+  width: 100%;
+  height: 100%;
+}
+
+header #containerMenuMobile {
+  position: fixed;
+  right: 20px;
+  top: -400px;
+  width: 250px;
+  height: 400px;
+  background-color: #C5C6C0;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+header #containerMenuMobile nav {
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+
+header #containerMenuMobile nav a {
+  text-decoration: none;
+  color: #050607;
+  font-size: 24px;
+  font-weight: 300;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+header #containerMenuMobile nav a:hover {
+  color: #D2242D;
+}
+
+header #containerMenuMobile nav a::before {
+  content: '';
+  position: absolute;
+  background-color: #D2242D;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+header #containerMenuMobile nav a:hover:before {
+  width: 100%;
+}
+
+header #containerMenuMobile nav a:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #containerMenuMobile nav a:first-child span {
+  margin-left: 13px;
+}
+
+header #containerMenuMobile img {
+  cursor: pointer;
 }
 
 #containerPresentation #containerAbout {
@@ -488,7 +594,7 @@ header nav a:first-child span {
 }
 
 #avaliations {
-  margin-top: 515px;
+  margin-top: 415px;
 }
 
 #avaliations #lovers {
@@ -517,38 +623,8 @@ header nav a:first-child span {
 }
 
 #avaliations #containerUsersAvaliations {
-  margin-top: 20px;
+  margin-top: 70px;
   margin-bottom: 196px;
-}
-
-#avaliations #containerUsersAvaliations #buttonsUsers {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-bottom: 52px;
-}
-
-#avaliations #containerUsersAvaliations #buttonsUsers button {
-  width: 46px;
-  height: 46px;
-  border-radius: 100%;
-  border: 1px solid #B21921;
-  background-color: transparent;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-#avaliations #containerUsersAvaliations #buttonsUsers button:hover {
-  background-color: #D2242D;
-  border: none;
-}
-
-#avaliations #containerUsersAvaliations #buttonsUsers #next {
-  margin-left: 56px;
 }
 
 #avaliations #containerUsersAvaliations #containerUsers {
@@ -731,7 +807,7 @@ footer #socialMedias div {
     display: none;
   }
   #background {
-    height: 2600px;
+    height: 2700px;
   }
   #chooseUs {
     -webkit-box-orient: vertical;
@@ -786,24 +862,33 @@ footer #socialMedias div {
         -ms-flex-align: center;
             align-items: center;
   }
-  header #containerHeader nav {
-    width: 35px;
-    height: 3px;
-    background-color: #D2242D;
-    position: relative;
-  }
-  header #containerHeader nav a {
+  header #containerHeader #navMenuDesktop {
     display: none;
   }
-  header #containerHeader nav:before {
-    content: '';
-    position: absolute;
+  header #containerHeader #menuHamburguer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header #containerHeader #menuHamburguer nav {
     width: 30px;
     height: 3px;
     background-color: #D2242D;
-    top: -10px;
+    position: relative;
+    margin-top: 10px;
   }
-  header #containerHeader nav:after {
+  header #containerHeader #menuHamburguer nav:before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 3px;
+    background-color: #D2242D;
+    top: 20px;
+  }
+  header #containerHeader #menuHamburguer nav:after {
     content: '';
     position: absolute;
     width: 40px;
@@ -880,6 +965,9 @@ footer #socialMedias div {
   header #containerHeader {
     width: 300px;
   }
+  header #containerMenuMobile {
+    right: 0;
+  }
   main {
     width: 300px;
   }
@@ -890,7 +978,7 @@ footer #socialMedias div {
     font-size: 18px;
   }
   #background {
-    height: 3635px;
+    height: 3435px;
   }
   #containerMenu #menu #listFoods li {
     margin: 25px;
