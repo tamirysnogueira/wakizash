@@ -47,7 +47,7 @@ Aqui você pode visualizar o projeto, é só clicar em:
 ✔️ Fazer uma página para o carrinho de compras <br>
 ✔️ Fazer uma página para o Menu <br>
 ✔️ Lógica para fazer os produtos irem para o carrinho de compras e salvá-los com LocalStorage <br>
-- Fazer um menu interativo para mostrar a navegação na parte responsiva: Menu, Minha Conta e Carrinho
+✔️ Fazer um menu interativo para mostrar a navegação na parte responsiva: Menu, Minha Conta e Carrinho
 
 <br>
 
